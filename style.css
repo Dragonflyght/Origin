@@ -1,0 +1,301 @@
+:root {
+  --dkgreen: #386641;
+  --green: #6A994E;
+  --ltgreen: #A7C957;
+  --peach: #F2E8CF;
+  --red: #BC4749;
+  --ltgray: #e8e8e8;
+}
+
+body {
+  font-family: Didact Gothic;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ---------------------------- */
+/* Images */
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+img.darken {
+  filter: brightness(35%);
+}
+
+/* ---------------------------- */
+/* Main */ 
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ---------------------------- */
+/* Headers */ 
+
+h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  margin-right: -.25em;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: .5em;
+  margin-right: -.5em;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+h1.no-space {
+  letter-spacing: normal;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+/* ---------------------------- */
+/* Navbar */
+
+nav#nav {
+  background-color: transparent!important;
+  background-image: linear-gradient(black, transparent);
+  color: white!important;
+}
+
+nav#nav p, nav#nav a {
+  color: white!important;
+}
+
+nav#nav .dropdown-item:hover {
+  background-color: rgba(0,0,0,.5);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav#nav .dropdown-item.active {
+  background-color: black;
+}
+
+nav#nav .dropdown-item {
+  border-bottom: 2px solid transparent;
+}
+
+nav#nav .dropdown-item:hover, nav#nav .nav-link:hover {
+  opacity: 70%;
+}
+
+nav#nav .nav-link.active {
+  border-bottom: 2px solid white;
+}
+
+/* ---------------------------- */
+/* Logo text */
+
+.logo {
+  display: inline;
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: .25em;
+  margin: 0px;
+}
+
+
+/* ---------------------------- */
+/* Carousel */
+/* As the only planned carousel is the one on the home page, I'm just modifying the entire thing to make life simpler */
+
+.carousel-caption {
+  /* Center vertically */
+  transform: translateY(-50%);
+  bottom: 0;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel img {
+  height: 100vh;
+}
+
+/* ---------------------------- */
+/* Buttons */ 
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 10px 20px calc(10px + .25em) 20px;
+  display: inline-block;
+  width: fit-content;
+  margin: 10px auto;
+  color: white;
+}
+
+.button.small {
+  padding: 5px 10px calc(5px + .25em) 10px;
+}
+
+.button:not(.hoveropacity):hover, .button:not(.hoveropacity):active {
+  border-color: none;
+  background-color: white;
+  color: black;
+}
+
+.button.hoveropacity:hover, .button.hoveropacity:active {
+  opacity: 80%;
+}
+
+.text-start .button, .text-start.button {
+  margin-left: 0px;
+}
+
+.text-end .button, .text-end.button {
+  margin-right: 0px;
+}
+
+/* ---------------------------- */
+/* Colors */
+
+.bg-trblack, .bg-red, .bg-ltgreen, .bg-green, .bg-dkgreen {
+  color: white;
+}
+
+.bg-trblack {
+  background-color: rgba(0,0,0,.5);
+  border: 2px solid white;
+}
+
+.bg-red { background-color: var(--red);}
+.bg-ltgreen { background-color: var(--ltgreen);}
+.bg-green { background-color: var(--green);}
+.bg-dkgreen { background-color: var(--dkgreen);}
+.bg-ltgray { background-color: var(--ltgray);}
+
+/* ---------------------------- */
+/* "Leaf" Shapes */
+
+.leaf-lt {
+  border-radius: 0px 25px 0px 25px;
+  overflow: hidden;
+}
+
+.leaf-rt {
+  border-radius: 25px 0px 25px 0px;
+  overflow: hidden;
+}
+
+/* ---------------------------- */
+/* Showstopper image panel */ 
+
+.showstopper.card, .showstopper.card img {
+  border-radius: 0px;
+  border: none;
+  height: 100vh;
+}
+
+.showstopper.card h3 {
+  color: white;
+}
+
+/* ---------------------------- */
+/* Destination highlights on the home page and flights page */ 
+
+/* Collapse image/text pairs into columns at bootstrap medium breakpoint */
+@media screen and (max-width: 768px) {
+  .dest-mod img {
+    width: 100%;
+  }
+}
+
+/* ---------------------------- */
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+footer .col-sm {
+  margin: auto;
+}
+
+footer .logo {
+  font-size: 1.2em;
+}
+
+footer p {
+  margin: 3px;
+}
+
+/* ---------------------------- */
+/* Header */ 
+
+.header.card, .header.card img {
+  border-radius: 0px;
+  border: none;
+  height: 50vh;
+}
+
+.header.card img {
+  filter: grayscale(100%) brightness(30%);
+}
+
+.header.card h1, .header.card h2, .header.card h3 {
+  color: white;
+}
+
+/* ---------------------------- */
+/* SVGs */ 
+
+.svg-white {
+  filter:invert(100%);
+}
+
+/* ---------------------------- */
+/* Dates dropdown */ 
+
+.collapse.dates table, .collapsing.dates table {
+  width: auto;
+  margin: auto;
+}
+
+.collapse.dates h2, .collapsing.dates h2 {
+  margin: 0px 50px 0px 10px;
+}
+
+.collapse.dates th, .collapsing.dates th {
+  text-align: left;
+}
+
+
+

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Origin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="nav" class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.svg" height=40px class="svg-white m-1"><p class="logo">Origin</p></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="images/menu.svg" height=25px class="svg-white m-1">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="flights.html">Book a Flight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="starliners.html">Starliners</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu bg-trblack">
+              <li><a class="dropdown-item" href="safety.html">Safety</a></li>
+              <li><a class="dropdown-item" href="prepost.html">Pre- and Post-Flight</a></li>
+              <li><a class="dropdown-item" href="tsa.html">TSA Information</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselHome" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/balcony-md.jpg" class="d-block w-100 darken" alt="A balcony view of the ship interior, showing plants and a pool">
+        <div class="carousel-caption">
+          <h3>Introducing Starliner</h3>
+          <h1>Demeter</h1>
+          <h3>Launching June 2079</h3>
+          <a class="button bg-trblack leaf-lt" href="flights.html">Book a Flight</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/rocket-lg.jpg" class="d-block w-100 darken" alt="A photo of a starship launching">
+        <div class="carousel-caption">
+          <h3>Introducing Starliner</h3>
+          <h1>Demeter</h1>
+          <h3>Launching June 2079</h3>
+          <a class="button bg-trblack leaf-lt" href="flights.html">Book a Flight</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/mars3-lg.png" class="d-block w-100 darken" alt="A photo from our Venus cruise">
+        <div class="carousel-caption">
+          <h3>Introducing Starliner</h3>
+          <h1>Demeter</h1>
+          <h3>Launching June 2079</h3>
+          <a class="button bg-trblack leaf-lt" href="flights.html">Book a Flight</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<main>
+
+
+  <!-- Popular location images and quick descriptions -->
+  <div class="container">
+    <div class="row g-0 dest-mod my-3 leaf-lt">
+      <img src="images/aurora-sm.jpg" class="col-3" alt="A beautiful green aurora">
+      <div class="col bg-ltgray d-flex flex-column justify-content-center text-start p-4">
+        <h2>Earth Orbit - Aurora Cruise</h2>
+        <p>In this stunning exploration aboard the Athena, passengers experience the beautiful northern and southern lights for an entirely new angle. This flight is perfect for families and never even truly leaves Earth’s atmosphere.</p>
+        <a class="button bg-dkgreen leaf-rt" href="flights.html#EarthInfo">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row g-0 dest-mod my-3 leaf-rt">
+      <div class="col bg-red d-flex flex-column justify-content-center text-end p-4">
+        <h2>Slingshot Cruise</h2>
+        <p>In this unforgettable, solar system spanning adventure, you will soar across all of currently-accessible space in our fleet’s flagship, the Hestia. By using the sun’s gravity, we can launch our state-of-the-art starliner across the solar system, all the way to Pluto. </p>
+        <a class="button bg-trblack leaf-lt" href="flights.html#SlingshotInfo">Learn More</a>
+      </div>
+      <img src="images/galaxy4-sm.jpg" class="col-8" alt="A galaxy behind a foreground view of Earth">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row g-0 dest-mod my-3 leaf-lt">
+      <img src="images/saturn-sm.jpg" class="col-3" alt="A picture of Saturn">
+      <div class="col bg-ltgray d-flex flex-column justify-content-center text-start p-4">
+        <h2>Saturn Cruise</h2>
+        <p>Take a trip on our flagship, the Hestia, all the way to the world of many rings! This spectacular flight features a shuttle adventure through the many moons and rings of Saturn and a stay at the new base on the moon Titan. </p>
+        <a class="button bg-dkgreen leaf-rt" href="flights.html#SaturnInfo">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row g-0 dest-mod my-3 leaf-rt">
+      <div class="col bg-green d-flex flex-column justify-content-center text-end p-4">
+        <h2>Moon Cruise</h2>
+        <p>In 1969, Neil Armstrong became the first human on the moon. Now, you too can follow in his footsteps. This amazing adventure includes dune buggy tours of the moon’s surface and a shuttle tour of the dark side of the moon.</p>
+        <a class="button bg-trblack leaf-lt" href="flights.html#MoonInfo">Learn More</a>
+      </div>
+      <img src="images/moon2-sm.jpg" class="col-3" alt="A picture of the Moon">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row g-0 dest-mod my-3 leaf-rt">
+      <div class="col bg-ltgray d-flex flex-column justify-content-center text-end p-4">
+        <h2>Mars Cruise</h2>
+        <p>Aboard the Demeter, passengers travel the red planet that has long fascinated the dreams of mankind. This flight includes on-the-ground-exploration in dune buggies, and guided tours of the Martian Base.</p>
+        <a class="button bg-red leaf-rt" href="flights.html#MarsInfo">Learn More</a>
+      </div>
+      <img src="images/mars-md.jpg" class="col-8" alt="A picture of the rocky red Martian landscape">
+    </div>
+  </div>
+
+  
+  
+</main>
+
+  <div class="card img-fluid text-center showstopper mt-5">
+  <img class="card-img-top" src="images/galaxy-lg.jpg" alt="Card image" style="width:100%" alt="A starry view of space">
+  <div class="card-img-overlay d-flex justify-content-center flex-column">
+    <h3 class="card-text">Explore the stars.</h3>
+    <a href="flights.html" class="button bg-trblack leaf-lt">Book a Flight</a>
+  </div>
+</div>
+
+<footer class="row">
+  <p class="logo col-sm align-middle"><img src="images/logo.svg" height=40px class="svg-white m-1">Origin</p>
+  <p class="col-sm">
+    <a href="#"><img src="images/youtube.svg" height=25px class="svg-white m-1" alt="YouTube Icon"></a>
+    <a href="#"><img src="images/facebook.svg" height=25px class="svg-white m-1" alt="Facebook Icon"></a>
+    <a href="#"><img src="images/instagram.svg" height=25px class="svg-white m-1" alt="Instagram Icon"></a>
+    <a href="#"><img src="images/tiktok.svg" height=25px class="svg-white m-1" alt="TikTok Icon"></a>
+    <a href="#"><img src="images/twitter.svg" height=25px class="svg-white m-1" alt="Twitter Icon"></a>
+  </p>
+  <p class="col-sm">&copy;2023 Kayleigh Gustafson and Anna Swank</p>
+</footer>
+
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
