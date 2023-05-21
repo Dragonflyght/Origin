@@ -28,6 +28,7 @@ img.darken {
   filter: brightness(35%);
 }
 
+
 /* ---------------------------- */
 /* Main */ 
 
@@ -272,6 +273,21 @@ footer p {
 
 .header.card h1, .header.card h2, .header.card h3 {
   color: white;
+}
+
+/* ---------------------------- */
+/* Starliner cards */
+
+.starliner {
+  display: flex;
+  flex-direction: row;
+  min-width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .starliner {
+    flex-direction: column;
+  }
 }
 
 /* ---------------------------- */
